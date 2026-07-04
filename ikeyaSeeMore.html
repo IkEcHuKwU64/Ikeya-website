@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>See More</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+  body{
+    background-color:white;
+  }
+  .video-player-sec{
+    width:100%; 
+    height:220px;
+    background:#000;
+    border:1px solid grey;
+  }
+  .video-player{
+    width:100%;
+    height:100%;
+  }
+  .video-details{
+    padding-left:10px;
+  }
+  .vidoe-name{
+    font-family:'Poppins', sans-serif;
+    font-size:17px;
+    font-weight:900;
+    color:beige;
+    margin-top:15px;
+    margin-left:5px;
+    width:150px;
+  }
+  .video-release{
+    color:gray;
+    font-family:'Poppins', sans-serif;
+    margin-bottom:0px;
+  }
+  .release-span{
+    margin-left:5px;
+  }
+  .star-ratings{
+    color:grey;
+    font-family:'Poppins', sans-serif;
+    font-size:12px;
+    margin-bottom:0px;
+    margin-top:0px;
+  }
+  .genres{
+    margin-top:0px;
+    margin-bottom:10px;
+    
+    display:flex;
+  }
+  .action-genre,
+  .romance-genre,
+  .melodrama-genre{
+    font-family:'Poppins', sans-serif;
+    font-size:10px;
+    text-align:center;
+    background-color:brown;
+    color:white;
+    border:none;
+    border-radius:3px;
+    margin-right:8px;
+    padding:4px;
+  }
+  .poster-summary{
+    color:white;
+    font-family:'Poppins', sans-serif;
+    font-size:13px;
+    margin-left:10px;
+  }
+  .posterpic-div {
+    border: 1px solid grey;
+    border-radius: 4px;
+    width: 140px;
+    height: 210px;
+    margin-bottom: 0px;
+    
+    display: flex;
+  }
+  .poster-pic {
+    width: 140px;
+    height: 210px;
+  }
+  .popular-movies{
+    margin-left:15px;
+
+
+    display:flex;
+    overflow-x:auto;
+    column-gap:15px;
+  }
+  .popular-label,
+  .poster-name{
+    color:beige;
+  }
+ 
+  </style>
+  
+</head>
+
+<body>
+  <div class="video-player-sec">
+    <iframe class="video-player" src="" frameborder="0" allowfullscreen>
+    </iframe>
+  </div>
+  <div class="video-details">
+    <h3 class="video-name js-vidName">Lady First
+    </h3>
+    <p class="video-release js-vidDate">
+      2026
+      <span class="release-span">
+        Movie
+      </span>
+    </p>
+    <p class="star-ratings js-vidRating">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9734;</span>
+    </p>
+    <div class="genres">
+      <p class="action-genre">
+        Action
+      </p>
+      <p class="romance-genre">
+      Romance
+      </p>
+      <p class="melodrama-genre">
+        Melodrama
+      </p>
+    </div>
+  </div>
+  <p class="video-summary js-vidSummary">
+    An arrogant but charismatic ladies' man finds his life of money, power and casual flings upended when he wakes up in a parallel world dominated by women.
+  </p>
+  <section class="popular-section">
+   <div class="popular">
+     <h3 class="popular-label">
+       Similar
+     </h3>
+   </div>
+   <form class="popular-movies">
+     <div class="poster-div">
+       <div class="posterpic-div">
+         <img class="poster-pic" src="/images/offCampus.jpeg">
+       </div>
+       <div class="detail-Div">
+         <p class="poster-name">Off Campus
+           <br>
+           <span class="release-date">
+             May 13, 2026
+           </span>
+         </p>
+       </div>
+     </div>
+     <div class="poster-div">
+       <div class="posterpic-div">
+         <img class="poster-pic" src="/images/warOfTheWorld.jpeg">
+       </div>
+       <div class="detail-Div">
+         <p class="poster-name">War of the Worlds
+           <br>
+           <span class="release-date">
+             July 29, 2025
+           </span>
+         </p>
+       </div>
+     </div>
+     <div class="poster-div">
+       <div class="posterpic-div">
+         <img class="poster-pic" src="/images/jujustu.jpeg">
+       </div>
+       <div class="detail-Div">
+         <p class="poster-name">JUJUTSU KAISEN
+           <br>
+           <span class="release-date">
+             October 3, 2020
+           </span>
+         </p>
+       </div>
+     </div>
+     <div class="poster-div">
+       <div class="posterpic-div">
+         <img class="poster-pic" src="/images/interstaller.jpeg">
+       </div>
+       <div class="detail-Div">
+         <p class="poster-name">Interstellar
+           <br>
+           <span class="release-date">
+             November 7, 2014
+           </span>
+         </p>
+       </div>
+     </div>
+     <div class="poster-div">
+       <div class="posterpic-div">
+         <img class="poster-pic" src="/images/bones.jpeg">
+       </div>
+       <div class="detail-Div">
+         <p class="poster-name">Bones
+           <br>
+           <span class="release-date">
+             September 13, 2005
+           </span>
+         </p>
+       </div>
+     </div>
+     <div class="poster-div">
+       <div class="posterpic-div">
+         <img class="poster-pic" src="/images/supernatural.jpeg">
+       </div>
+       <div class="detail-Div">
+         <p class="poster-name">Supernatural
+           <br>
+           <span class="release-date">
+             September 13, 2005
+           </span>
+         </p>
+       </div>
+     </div>
+     <div class="poster-div">
+       <div class="posterpic-div">
+         <img class="poster-pic" src="/images/blacklist.jpeg">
+       </div>
+       <div class="detail-Div">
+         <p class="poster-name">The Blacklist
+           <br>
+           <span class="release-date">
+             September23, 2013
+           </span>
+         </p>
+       </div>
+     </div>
+     <div class="poster-div">
+       <div class="posterpic-div">
+         <img class="poster-pic" src="/images/strangerThing.jpeg">
+       </div>
+       <div class="detail-Div">
+         <p class="poster-name">Stranger Things
+           <br>
+           <span class="release-date">
+             July 15, 2016
+           </span>
+         </p>
+       </div>
+     </div>
+   </form>
+ </section>
+  
+ <script type="module" src="/IkeyaProject/scripts/ikeyaSeeMore.js" defer></script>
+</body>
+
+</html>

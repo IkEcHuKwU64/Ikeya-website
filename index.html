@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ikeya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+  body{
+    padding-bottom:70px;
+  }
+  header{
+    background-color:lightgray;
+    margin-bottom:10px;
+    padding-left:15px;
+    padding-right:5px;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    
+    position:sticky;
+    top:0;
+    z-index:1000;
+  }
+  h1{
+    font-family:'Poppins', san-serif;
+    font-size:13px;
+    letter-spacing:0.5px;
+  }
+  a{
+    text-decoration:none;
+  }
+  input{
+    border:1px solid grey;
+    width:250px;
+    height:20px;
+  }
+  button{
+    height:20px;
+    background-color:black;
+    color:white;
+    border-radius:4px;
+    border:none;
+  }
+  .banner-div{
+  padding-bottom:0p
+  
+  position:relative;
+  }
+  .project-banner{
+    width:400px;
+  }
+  .banner-maintext{
+    color:white;
+    font-family:'Poppins', san-serif;
+    font-size:32px;
+    font-weight:800;
+    
+    position:absolute;
+    top:75px;
+    left:30px;
+  }
+  .banner-maintexti{
+  color: white;
+  font-family: 'Poppins', san-serif;
+  font-size: 32px;
+  font-weight:800;
+  
+  position: absolute;
+  top: 122px;
+  left: 30px;
+}
+  .banner-subtext{
+    color:white;
+    font-family:'Poppins', san-serif;
+    font-size:20px;
+    font-weight:400;
+    
+    position:absolute;
+    top:185px;
+    left:30px;
+    right:15px;
+  }
+  .trending-section{
+  }
+  .label,
+  .popular,
+  .trailer{
+    height:55px;
+    
+    display:flex;
+    align-items:center;
+  }
+  .category-upDate,
+  .popular-upDate{
+    background-color:darkblue;
+    color:white;
+    font-family:'Poppins', san-serif;
+    font-size:15px;
+    font-weight:600;
+    margin-left:20px;
+    border-radius:10px;
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .trending-movies,
+  .popular-movies,
+  .latest-trailers{
+    margin-left:15px;
+    
+    
+    display:flex;
+    overflow-x:auto;
+    column-gap:15px;
+  }
+  .movie-div,
+  .poster-div{
+    width:144px;
+  }
+  .movie-pic,
+  .poster-pic{
+    width:140px;
+    height:210px;
+  }
+  .moviepic-div,
+  .posterpic-div{
+    border:1px solid grey;
+    border-radius:4px;
+    width:140px;
+    height:210px;
+    margin-bottom:0px;
+    
+    display:flex;
+  }
+  .detail-Div {
+  width:140px;
+  margin-top:5px;
+  padding-bottom:0px;
+  }
+  .category-text,
+  .popular-label,
+  .trailer-label{
+    font-family:'Poppins', san-serif;
+    font-size:20px;
+    font-weight:600;
+    margin-left:15px;
+  }
+  .movie-name,
+  .poster-name{
+    
+    font-family:'Poppins', san-serif;
+    font-size:15px;
+    font-weight:500;
+    margin-top:0px;
+  }
+  .release-date{
+    font-size:14px;
+    font-weight:300;
+    color:grey;
+    margin-top:2px;
+    margin-bottom:0px;
+  }
+  .popular-section{
+    background-color:black;
+  }
+  .popular-label,
+  .poster-name,
+  .vPoster-name,
+  .vPoster-caption{
+    color:white;
+  }
+  .popular-upDate{
+    background-color:white;
+    color:blue;
+  }
+  vPoster-div{
+    background-color:rgb(10, 31, 68);
+    margin-bottom:5px;
+  }
+  .vPosterpic-div{
+    border:1px solid grey;
+    border-radius:4px;
+    margin-bottom:2px;
+    width:315px;
+    height:182px;
+  }
+  .vPoster-pic{
+    width:315px;
+    height:182px;
+  }
+  .vPoster-detail{
+    padding-bottom:10px;
+    margin-top:0px;
+    width:315px;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+  }
+  .vPoster-name{
+    font-family:'Poppins',sans-serif;
+    font-size:16px;
+    font-weight:600;
+    margin-top:0px;
+    margin-bottom:0px;
+   
+  }
+  .vPoster-caption{
+    font-family:'Poppins',sans-serif;
+    font-size:16px;
+    font-weight:400;
+    margin-top:0px;
+    margin-bottom:0px;
+  }
+  .latest-trailers{
+  }
+  .trailer-section{
+    background-image:url('/images/ikeyaProBanner.png');
+    padding-top:10px;
+    padding-bottom:15px;
+  }
+  
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/IkeyaProject/ikeya.html">
+        ikeya
+      </a>
+    </h1>
+    <input type="search" placeholder="Search">
+    <a href="/IkeyaProject/ikeyaLogin.html">
+      <button>
+      Log In
+    </button>
+    </a>
+  </header>
+  <div class="banner-div">
+    <img class="project-banner" src="/images/ikeyaProBanner.png">
+  </div>
+  <h1 class="banner-maintext">
+    Unlimited Movies.
+    <span class="success-mark">
+      &#9989;
+    </span>
+  </h1>
+  <h1 class="banner-maintexti">
+    Instant Access.
+    <span class="success-mark">
+      &#9989;
+    </span>
+  </h1>
+   
+    <p class="banner-subtext">
+    Your ultimate stash of blockbuster
+    <br>movies and series. 
+    <br>Watch online instantly or download for later in pure HD.
+    </p>
+    <section class="trending-section">
+    <div class="label">
+    <h3 class="category-text">
+      Trending
+    </h3>
+    </div>
+    <form class="trending-movies js-grid">
+    </form>
+    </section>
+    
+    <section class="trailer-section">
+      <div class="trailer">
+        <h3 class="trailer-label">
+          In Cenema
+        </h3>
+      </div>
+      <form class="latest-trailers nowPlaying-grid">
+      </form>
+    </section>
+    
+    <section class="trending-section">
+      <div class="label">
+        <h3 class="category-text">
+          Favourite
+        </h3>
+      </div>
+      <form class="trending-movies topRated-grid">
+      </form>
+    </section>
+    
+    <section class="popular-section">
+      <div class="popular">
+        <h3 class="popular-label">
+          What's Popular
+        </h3>
+      </div>
+      <form class="popular-movies popular-grid"></form>
+</section>
+
+<script type="module" src="/IkeyaProject/scripts/ikeya.js"></script>
+</body>
+
+</html>
